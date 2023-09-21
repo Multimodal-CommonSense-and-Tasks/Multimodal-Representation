@@ -12,14 +12,16 @@ This paper introduces **Implicit Nonlinear Diffusion Model (INDM)**, that learns
 
 <img src="./figures/overview.png" width="1000" title="overview" alt="INDM attains a ladder structure between the data space and the latent space. The latent vector is visualized by normalizing the latent value">
 
-Paper description:
+#### Paper description:
 Whereas diverse variations of diffusion models exist, extending the linear diffusion into a nonlinear diffusion process is investigated by very few works. The nonlinearity effect has been hardly understood, but intuitively, there would be promising diffusion patterns to efficiently train the generative distribution towards the data distribution. This paper introduces a data-adaptive nonlinear diffusion process for score-based diffusion models. The proposed Implicit Nonlinear Diffusion Model (INDM) learns by combining a normalizing flow and a diffusion process. Specifically, INDM implicitly constructs a nonlinear diffusion on the data space by leveraging a linear diffusion on the latent space through a flow network. This flow network is key to forming a nonlinear diffusion, as the nonlinearity depends on the flow network. This flexible nonlinearity improves the learning curve of INDM to nearly Maximum Likelihood Estimation (MLE) against the non-MLE curve of DDPM++, which turns out to be an inflexible version of INDM with the flow fixed as an identity mapping. Also, the discretization of INDM shows the sampling robustness. In experiments, INDM achieves the state-of-the-art FID of 1.75 on CelebA.
 
-Main Idea: This paper proposes a model that expands the forward path, the process of giving noise to data in the existing diffusion model, from being fixed by a linear SDE to become a learningable noise process.
+#### Main Idea:
+This paper proposes a model that expands the forward path, the process of giving noise to data in the existing diffusion model, from being fixed by a linear SDE to become a learningable noise process.
 To this end, the normalizing flow model connecting the data space and the late space and the linear diffusion process in the late space are combined to form a non-linear diffusion process in the data space.
 It was confirmed that the diffusion model learned with this non-linear diffusion process proceeds close to MLE Training by overcoming the variological gap caused by robust sampling and elbo that produces good images even if the sampling step is reduced.
 
-Contribution: INDM provides the following contributions over the existing models.
+#### Contribution:
+INDM provides the following contributions over the existing models.
 * INDM achieves fast and tractable optimization with implict modeling.
 * INDM learns not only drift but volatility coefficients of the forward SDE.
 * INDM trains its network with Maximum Likelihood Estimation (MLE).
