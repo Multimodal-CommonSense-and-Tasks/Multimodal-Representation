@@ -12,6 +12,9 @@ This paper introduces **Implicit Nonlinear Diffusion Model (INDM)**, that learns
 
 <img src="./figures/overview.png" width="1000" title="overview" alt="INDM attains a ladder structure between the data space and the latent space. The latent vector is visualized by normalizing the latent value">
 
+------- Explanation ------- 
+This paper introduces 
+
 ## Requirements
 
 This code was tested with CUDA 11.1 and Python 3.8.
