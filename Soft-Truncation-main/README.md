@@ -11,11 +11,16 @@ We propose a genearlly applicable training method for a general weighted diffusi
 
 ![schematic](figure/sample_figures_256.jpg)
 
-Abstract: Recent advances in diffusion models bring stateof-the-art performance on image generation tasks. However, empirical results from previous research in diffusion models imply an inverse correlation between density estimation and sample generation performances. This paper investigates with sufficient empirical evidence that such inverse correlation happens because density estimation is significantly contributed by small diffusion time, whereas sample generation mainly depends on large diffusion time. However, training a score network well across the entire diffusion time is demanding because the loss scale is significantly imbalanced at each diffusion time. For successful training, therefore, we introduce Soft Truncation, a universally applicable training technique for diffusion models, that softens the fixed and static truncation hyperparameter into a random variable. In experiments, Soft Truncation achieves stateof-the-art performance on CIFAR-10, CelebA, CelebA-HQ 256 × 256, and STL-10 datasets.
+#### Paper description:
+Whereas diverse variations of diffusion models exist, extending the linear diffusion into a nonlinear diffusion process is investigated by very few works. The nonlinearity effect has been hardly understood, but intuitively, there would be promising diffusion patterns to efficiently train the generative distribution towards the data distribution. This paper introduces a data-adaptive nonlinear diffusion process for score-based diffusion models. The proposed Implicit Nonlinear Diffusion Model (INDM) learns by combining a normalizing flow and a diffusion process. Specifically, INDM implicitly constructs a nonlinear diffusion on the data space by leveraging a linear diffusion on the latent space through a flow network. This flow network is key to forming a nonlinear diffusion, as the nonlinearity depends on the flow network. This flexible nonlinearity improves the learning curve of INDM to nearly Maximum Likelihood Estimation (MLE) against the non-MLE curve of DDPM++, which turns out to be an inflexible version of INDM with the flow fixed as an identity mapping. Also, the discretization of INDM shows the sampling robustness. In experiments, INDM achieves the state-of-the-art FID of 1.75 on CelebA. 
+This paper expands the linear diffusion to trainable nonlinear diffusion by combining an invertible transformation and a diffusion model, where the nonlinear diffusion learns the forward diffusion out of variational family of inference measures. A limitation of INDM lies in the training/evaluation time. Potential risk from this work is the negative use of deep generative models, such as deepfake images
 
-Idea and Contribution
+#### Main Idea:
+This paper proposes a model that expands the forward path, the process of giving noise to data in the existing diffusion model, from being fixed by a linear SDE to become a learningable noise process. To this end, the normalizing flow model connecting the data space and the late space and the linear diffusion process in the late space are combined to form a non-linear diffusion process in the data space. It was confirmed that the diffusion model learned with this non-linear diffusion process proceeds close to MLE Training by overcoming the variological gap caused by robust sampling and elbo that produces good images even if the sampling step is reduced.
 
-Code & experiment
+#### Contribution:
+There are two interesting properties of Soft Truncation.
+* First, though Soft Truncation is nothing to do with the weighting function in its algorithmic design, surprisingly, Soft Truncation turns out to be equivalent to a diffusion model with a general weight
 
 ## Running Commands
 
