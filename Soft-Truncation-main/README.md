@@ -1,9 +1,5 @@
 ## Soft Truncation: A Universal Training Technique of Score-based Diffusion Model for High Precision Score Estimation
 **[Dongjun Kim](https://sites.google.com/view/dongjun-kim) \*,[Seungjae Shin](https://sites.google.com/view/seungjae-shin) \*, Kyungwoo Song, Wanmo Kang, Il-Chul Moon**
-Dongjun Kim 1 Seungjae Shin 1 Kyungwoo Song 2 Wanmo Kang 1
-Il-Chul Moon 1 3
-
-
 
 This repo contains an official PyTorch implementation for the paper [Soft Truncation: A Universal Training Technique of Score-based Diffusion Model for High Precision Score Estimation](http://arxiv.org/abs/2106.05527).
 
