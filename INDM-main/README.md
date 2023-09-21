@@ -1,4 +1,4 @@
-# Maximum Likelihood Training of Implicit Nonlinear Diffusion Model (INDM) (NeurIPS 2022)
+## Maximum Likelihood Training of Implicit Nonlinear Diffusion Model (INDM) (NeurIPS 2022 Poster)
 
 | [paper](https://arxiv.org/abs/2205.13699) | [pretrained model](https://www.dropbox.com/sh/yapgdylhkm4j0hu/AACh4jvT7wtBgVNmiUprRSdCa?dl=0) |
 
