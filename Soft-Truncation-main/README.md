@@ -5,7 +5,7 @@
 
 This repo contains an official PyTorch implementation for the paper [Soft Truncation: A Universal Training Technique of Score-based Diffusion Model for High Precision Score Estimation](http://arxiv.org/abs/2106.05527).
 
---------------------
+## Overview
 
 We propose a genearlly applicable training method for a general weighted diffusion loss.
 
@@ -84,7 +84,6 @@ If you find the code useful for your research, please consider citing
   year={2021}
 }
 ```
-
 This work is heavily built upon the code from
 * Song, Yang, et al. "Score-Based Generative Modeling through Stochastic Differential Equations." *International Conference on Learning Representations (ICLR)*. 2021.
 * Song, Yang, et al. "Maximum likelihood training of score-based diffusion models." *Advances in Neural Information Processing Systems (NeurIPS)*. 2021.
