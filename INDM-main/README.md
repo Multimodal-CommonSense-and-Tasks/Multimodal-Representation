@@ -139,6 +139,6 @@ If you find the code useful for your research, please consider citing
  }
  ```
 This work is heavily built upon the code from
-* [Song, Yang, et al. "Score-Based Generative Modeling through Stochastic Differential Equations." *International Conference on Learning Representations (ICLR)*. 2021.](https://github.com/yang-song/score_sde_pytorch)
-* [Song, Yang, et al. "Maximum likelihood training of score-based diffusion models." *Advances in Neural Information Processing Systems (NeurIPS)*. 2021.](https://github.com/yang-song/score_flow)
-* [Xuezhe Ma, et al. "Decoupling Global and Local Representations via Invertible Generative Flows." *International Conference on Learning Representations (ICLR)*. 2021.](https://github.com/XuezheMax/wolf)
+* Song, Yang, et al. "Score-Based Generative Modeling through Stochastic Differential Equations." *International Conference on Learning Representations (ICLR)*. 2021.
+* Song, Yang, et al. "Maximum likelihood training of score-based diffusion models." *Advances in Neural Information Processing Systems (NeurIPS)*. 2021.
+* Xuezhe Ma, et al. "Decoupling Global and Local Representations via Invertible Generative Flows." *International Conference on Learning Representations (ICLR)*. 2021.
