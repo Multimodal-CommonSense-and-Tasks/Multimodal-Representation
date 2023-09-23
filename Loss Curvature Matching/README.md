@@ -34,8 +34,8 @@ By considering the sharpness on loss difference, LCMat(right) can successfully i
 #### Contribution:
 LCMat provides the following advantages over the existing models.
 * LCMat derives an implementable upper bound of the sharpness, which results in an objective of LCMat.
-• LCMat adaptively transform the objective into the function of either selection or condensation objective, so LCMat becomes the fundamentally applicable mechanism for dataset reduction.
-• We conduct experiments over the evaluation scenarios with different benchmark datasets, and we confirm that LCMat shows clear merit when the reduction ratio becomes significant and when the evaluation scenario becomes complex, e.g. continual learning.
+* LCMat adaptively transform the objective into the function of either selection or condensation objective, so LCMat becomes the fundamentally applicable mechanism for dataset reduction.
+* We conduct experiments over the evaluation scenarios with different benchmark datasets, and we confirm that LCMat shows clear merit when the reduction ratio becomes significant and when the evaluation scenario becomes complex, e.g. continual learning.
 
 ## Setup
 Please install required libraries as follows.
