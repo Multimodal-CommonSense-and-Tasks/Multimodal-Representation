@@ -6,8 +6,6 @@
  
 ## Overview
 
-This paper introduces **Implicit Nonlinear Diffusion Model (INDM)**, that learns the nonlinear diffusion process by combining a normalizing flow and a diffusion process.
-
 <img src="./figures/overview.png" width="1000" title="overview" alt="INDM attains a ladder structure between the data space and the latent space. The latent vector is visualized by normalizing the latent value">
 
 #### Paper description and Main Idea:
