@@ -52,7 +52,7 @@ Download stats files and save it to `./assets/stats/`.
 
 * When you run a deep model, change the value of `model.num_res_blocks` from 4 to 8 in the config file. (or add `--config.model.num_res_blocks 8` in your script.) 
 
-### CIFAR-10
+### - CIFAR-10
 
 #### INDM (VE, FID)
 
@@ -90,7 +90,7 @@ python main.py --mode train --config configs/vp/CIFAR10/indm_nll.py --workdir <w
 python main.py --mode eval --config configs/vp/CIFAR10/indm_nll.py --workdir <work_dir>
 ```
 
-### CelebA
+### - CelebA
 
 #### INDM (VE, FID)
 
