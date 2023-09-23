@@ -77,7 +77,7 @@ python main.py --config configs/vp/IMAGENET32/ddpmpp_st.py --workdir YOUR_SAVING
 python main.py --config configs/ve/celebahq/uncsnpp_st.py --workdir YOUR_SAVING_DIRECTORY --mode train
 ```
 
-## References
+## Reference
 
 If you find the code useful for your research, please consider citing
 ```bib
