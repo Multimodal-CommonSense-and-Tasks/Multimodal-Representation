@@ -1,17 +1,17 @@
-# LCMat (Loss Curvature Matching for Dataset Selection and Condensation, AISTATS 2023)
-
-Official PyTorch implementation of
-**["Loss-Curvature Matching for Dataset Selection and Condensation"](https://arxiv.org/pdf/2303.04449v1.pdf)** (AISTATS 2023) by
-[Seungjae Shin*](https://sites.google.com/view/seungjae-shin),
+# Loss Curvature Matching for Dataset Selection and Condensation (LCMat) (AISTATS 2023 Poster)
+**[Seungjae Shin*](https://sites.google.com/view/seungjae-shin),
 [HeeSun Bae*](https://sites.google.com/view/baeheesun),
 [Donghyeok Shin](https://aailab.kaist.ac.kr/xe2/members_phdstudent/20976),
 [Weonyoung Joo](https://scholar.google.co.kr/citations?user=r2eJgW4AAAAJ&hl=ko&oi=ao),
-and [Il-Chul Moon](https://aailab.kaist.ac.kr/xe2/members_professor/6749).
+and [Il-Chul Moon](https://aailab.kaist.ac.kr/xe2/members_professor/6749).**
 
 ## Overview
 
-LCMat identifies the optimal dataset by matching the worst loss-curvature gap between the original dataset and the reduced dataset.
-It learns toward achieving the generalization around the local parameter region on dataset reduction procedure. Our implementation code is largely dependent on the code of [DeepCore](https://github.com/PatrickZH/DeepCore). We thank the authors for providing these codes.
+This paper introduces **Loss Curvature Matching (LCMat)**, that the infers an optimal dataset by matching the worst loss-curvature gap between the original dataset and the reduced dataset.
+
+#### Paper description and Main idea:
+
+Existing methods utilize the neural network during the dataset reduction procedure, so the model parameter becomes important factor in preserving the performance after reduction. By depending upon the importance of parameters,this paper introduces a new reduction objective, coined LCMat, which Matches the Loss Curvatures of the original dataset and reduced dataset over the model parameter space, more than the parameter point. This new objective induces a better adaptation of the reduced dataset on the perturbed parameter region than the exact point matching. Particularly, we identify the worst case of the loss curvature gap from the local parameter region, and we derive the implementable upper bound of such worst-case with theoretical analyses. 
 
 <p align="center">
   <img 
@@ -30,6 +30,13 @@ By considering the sharpness on loss difference, LCMat(right) can successfully i
     src="https://user-images.githubusercontent.com/105624747/219572052-fded6505-861d-4db6-bf4e-f9cde1c5a71b.png"
   >
 </p>
+
+#### Contribution:
+INDM provides the following advantages over the existing models.
+* INDM achieves fast and tractable optimization with implict modeling.
+* INDM learns not only drift but volatility coefficients of the forward SDE.
+* INDM trains its network with Maximum Likelihood Estimation (MLE).
+* INDM is robust on the sampling discretization.
 
 ## Setup
 Please install required libraries as follows.
