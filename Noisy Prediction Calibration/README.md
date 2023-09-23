@@ -88,6 +88,17 @@ python main_npc.py --dataset MNIST --noise_type sym --noisy_ratio 0.2 --class_me
 It will train NPC from the KNN prior and the corresponding base classifier with `CE` (Cross Entropy) loss on the `MNIST` dataset with `sym` (symmetric 20%) noise. 
 
 
+## Reference
+```
+@inproceedings{bae2022noisy,
+  title={From noisy prediction to true label: Noisy prediction calibration via generative model},
+  author={Bae, HeeSun and Shin, Seungjae and Na, Byeonghu and Jang, JoonHo and Song, Kyungwoo and Moon, Il-Chul},
+  booktitle={International Conference on Machine Learning},
+  pages={1277--1297},
+  year={2022},
+  organization={PMLR}
+}
+```
 
 
 
