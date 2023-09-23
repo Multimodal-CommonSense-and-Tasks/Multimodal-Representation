@@ -25,7 +25,9 @@ INDM provides the following advantages over the existing models.
 * INDM trains its network with Maximum Likelihood Estimation (MLE).
 * INDM is robust on the sampling discretization.
 
-## Requirements
+## Training and Evaluation
+
+### 1) Requirements
 
 This code was tested with CUDA 11.1 and Python 3.8.
 
@@ -33,12 +35,12 @@ This code was tested with CUDA 11.1 and Python 3.8.
 pip install -r requirements.txt
 ```
 
-## Pretrained Checkpoints
+### 2) Pretrained Checkpoints
 
 We release our checkpoints [here](https://www.dropbox.com/sh/yapgdylhkm4j0hu/AACh4jvT7wtBgVNmiUprRSdCa?dl=0).
 
 
-## Stats files for FID evaluation
+### 3) Stats files for FID evaluation
 
 Download stats files and save it to `./assets/stats/`.
 
@@ -46,7 +48,7 @@ Download stats files and save it to `./assets/stats/`.
 * For CelebA, we provide the stats file [`celeba_stats.npz`](https://www.dropbox.com/s/0y5c3q6qbehjxjx/celeba_stats.npz?dl=0).
 
 
-## Training and Evaluation
+### 4) Training and Evaluation each dataset
 
 * When you run a deep model, change the value of `model.num_res_blocks` from 4 to 8 in the config file. (or add `--config.model.num_res_blocks 8` in your script.) 
 
