@@ -123,7 +123,7 @@ python main.py --mode train --config configs/vp/CELEBA/indm_nll.py --workdir <wo
 python main.py --mode eval --config configs/vp/CELEBA/indm_nll.py --workdir <work_dir>
 ```
 
-## References
+## Reference
 If you find the code useful for your research, please consider citing
 ```bib 
 @inproceedings{kim2022maximum,
