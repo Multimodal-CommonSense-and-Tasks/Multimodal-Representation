@@ -1,5 +1,5 @@
 # SAAL: Sharpness-Aware Active Learning (ICML 2023) <br><sub>Official PyTorch implementation of the Discriminator Guidance </sub>
-**Yoon-Yeong Kim\*, Youngjae Cho\*, Joonho Jang, Byeonghu Na, Yeongmin Kim, Kyungwoo Song, Wanmo Kang, Il-Chul Moon **   
+** Yoon-Yeong Kim\*, Youngjae Cho\*, Joonho Jang, Byeonghu Na, Yeongmin Kim, Kyungwoo Song, Wanmo Kang, Il-Chul Moon **   
 <sup> * Equal contribution </sup> <br>
 
 
