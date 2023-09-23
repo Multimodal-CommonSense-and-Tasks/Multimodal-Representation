@@ -55,9 +55,10 @@ Our model achieves the following performance on active learning settings:
 
 
 ## Reference
-
+```
 @article{kim2023saal,
   title={SAAL: Sharpness-Aware Active Learning},
   author={Kim, Yoon-Yeong and Cho, Youngjae and Jang, JoonHo and Na, Byeonghu and Kim, Yeongmin and Song, Kyungwoo and Kang, Wanmo and Moon, Il-chul},
   year={2023}
 }
+```
