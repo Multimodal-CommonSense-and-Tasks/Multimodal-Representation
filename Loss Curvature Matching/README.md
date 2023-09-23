@@ -45,7 +45,7 @@ We kindly suggest other researchers to run this code on `python = 3.8` version.
 pip install -r requirements.txt
 ```
 
-## Reproduce
+## Training and Evaluation
 For reproduce the results of LCMAT-S, we provide a bash file for running `main.py`, which located at: 
 ```
 /bash/LCMat_XXX.sh
@@ -54,6 +54,22 @@ Here, XXX is dataset. You can get results in `result/` directory.
 
 You can also reproduce cross-architecture generalization result by running `cross_network_generalization.py`.
 
-We will also release the code of LCMat-C soon.
-
-Thank you for your Interest in our paper!
+## References
+If you find the code useful for your research, please consider citing
+```bib 
+@InProceedings{pmlr-v206-shin23a,
+  title = 	 {Loss-Curvature Matching for Dataset Selection and Condensation},
+  author =       {Shin, Seungjae and Bae, Heesun and Shin, Donghyeok and Joo, Weonyoung and Moon, Il-Chul},
+  booktitle = 	 {Proceedings of The 26th International Conference on Artificial Intelligence and Statistics},
+  pages = 	 {8606--8628},
+  year = 	 {2023},
+  editor = 	 {Ruiz, Francisco and Dy, Jennifer and van de Meent, Jan-Willem},
+  volume = 	 {206},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {25--27 Apr},
+  publisher =    {PMLR},
+  pdf = 	 {https://proceedings.mlr.press/v206/shin23a/shin23a.pdf},
+  url = 	 {https://proceedings.mlr.press/v206/shin23a.html},
+  abstract = 	 {Training neural networks on a large dataset requires substantial computational costs. Dataset reduction selects or synthesizes data instances based on the large dataset, while minimizing the degradation in generalization performance from the full dataset. Existing methods utilize the neural network during the dataset reduction procedure, so the model parameter becomes important factor in preserving the performance after reduction. By depending upon the importance of parameters, this paper introduces a new reduction objective, coined LCMat, which Matches the Loss Curvatures of the original dataset and reduced dataset over the model parameter space, more than the parameter point. This new objective induces a better adaptation of the reduced dataset on the perturbed parameter region than the exact point matching. Particularly, we identify the worst case of the loss curvature gap from the local parameter region, and we derive the implementable upper bound of such worst-case with theoretical analyses. Our experiments on both coreset selection and condensation benchmarks illustrate that LCMat shows better generalization performances than existing baselines.}
+}
+ ```
