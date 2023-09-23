@@ -2,13 +2,19 @@
 **[Dongjun Kim](https://sites.google.com/view/dongjun-kim) \*, [Yeongmin Kim](https://sites.google.com/view/yeongmin-space/%ED%99%88) \*, Se Jung Kwon, Wanmo Kang, and Il-Chul Moon**   
 <sup> * Equal contribution </sup> <br>
 
-| [paper](https://arxiv.org/abs/2211.17091) |  <br>
-**See [alsdudrla10/DG_imagenet](https://github.com/alsdudrla10/DG_imagenet) for ImageNet256 code release.** <br>
-
 ## Overview
 ![Teaser image](./figures/Figure1_v2.PNG)
 
-## Step-by-Step Running of Discriminator Guidance
+#### Paper description and Main Idea:
+The proposed method, Discriminator Guidance, aims to improve sample generation of pre-trained diffusion models. The approach introduces a discriminator that gives explicit supervision to a denoising sample path whether it is realistic or not. Unlike GANs, our approach does not require joint training of score and discriminator networks. Instead, we train the discriminator after score training, making discriminator training stable and fast to converge. In sample generation, we add an auxiliary term to the pre-trained score to deceive the discriminator. This term corrects the model score to the data score at the optimal discriminator, which implies that the discriminator helps better
+score estimation in a complementary way.
+
+#### Contribution:
+Discriminator provides the following advantages over the existing models.
+* Discriminator Guidance propose a new generative process with an adjusted score of a given pretrained score model.
+✓ We show that the discriminator-guided samples are closer to the real-world data than the non-guided samples, theoretically and empirically.
+
+## Training and Evaluation
 
 ### 1) Prepare a pre-trained score network
   - Download **edm-cifar10-32x32-uncond-vp.pkl** at [EDM](https://github.com/NVlabs/edm) for unconditional model.
