@@ -1,8 +1,6 @@
 ## Maximum Likelihood Training of Implicit Nonlinear Diffusion Model (INDM) (NeurIPS 2022 Poster) <br><sub>Official PyTorch implementation of the Maximum Likelihood Training of Implicit Nonlinear Diffusion Model</sub>
 **[Dongjun Kim](https://github.com/Kim-Dongjun) \*, [Byeonghu Na](https://github.com/byeonghu-na) \*, Se Jung Kwon, Dongsoo Lee, Wanmo Kang, Il-Chul Moon**   
 <sup> * Equal contribution </sup>
-
-| [paper](https://arxiv.org/abs/2205.13699) |
  
 ## Overview
 
