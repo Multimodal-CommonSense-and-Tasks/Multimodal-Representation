@@ -4,7 +4,6 @@
 | [paper](http://arxiv.org/abs/2106.05527) | <br>
 
 ## Overview
-We propose a genearlly applicable training method for a general weighted diffusion loss.
 
 ![schematic](figure/sample_figures_256.jpg)
 
