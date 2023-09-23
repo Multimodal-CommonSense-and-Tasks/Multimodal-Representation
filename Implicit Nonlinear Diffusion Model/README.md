@@ -2,7 +2,7 @@
 **[Dongjun Kim](https://github.com/Kim-Dongjun) \*, [Byeonghu Na](https://github.com/byeonghu-na) \*, Se Jung Kwon, Dongsoo Lee, Wanmo Kang, Il-Chul Moon**   
 <sup> * Equal contribution </sup>
 
-| [paper](https://arxiv.org/abs/2205.13699) | [pretrained model](https://www.dropbox.com/sh/yapgdylhkm4j0hu/AACh4jvT7wtBgVNmiUprRSdCa?dl=0) |
+| [paper](https://arxiv.org/abs/2205.13699) |
  
 ## Overview
 
