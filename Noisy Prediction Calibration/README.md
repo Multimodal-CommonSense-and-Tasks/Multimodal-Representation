@@ -21,6 +21,15 @@ NPC operates as a post-processing module to a black-box classifier, without furt
   >
 </p>
 
+## Paper description and Main Idea
+
+Through the introduction and estimation of a new type of transition matrix via generative model, NPC corrects the noisy prediction from the pre-trained classifier to the true label as a post-processing scheme. We prove that NPC theoretically aligns with the transition matrix based methods. 
+
+## Contribution
+By explicitly modeling the relation between the output of a classifier and the true label, NPC opens up new possibilities for formulating noisy label problems.
+
+
+
 ## Setup
 
 Install required libraries.
