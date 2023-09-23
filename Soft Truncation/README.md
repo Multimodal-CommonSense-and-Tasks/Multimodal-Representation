@@ -19,8 +19,10 @@ There are two interesting properties of Soft Truncation.
 
 ## Training and Evaluation
 
-### Pretrained checkpoints
+### 1) Pretrained checkpoints
 We release our checkpoints [here](https://drive.google.com/drive/folders/1Wyk0ucFW-QDS_g1EcPm361LWWgWqJ6L_).
+
+### 2) Training and Evaluation commands
 
 **CIFAR-10**
 
@@ -77,9 +79,6 @@ python main.py --config configs/vp/IMAGENET32/ddpmpp_st.py --workdir YOUR_SAVING
 ```shell script
 python main.py --config configs/ve/celebahq/uncsnpp_st.py --workdir YOUR_SAVING_DIRECTORY --mode train
 ```
-
-## Experimental Results
-
 
 ## References
 
