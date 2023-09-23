@@ -11,17 +11,15 @@ We propose a genearlly applicable training method for a general weighted diffusi
 
 ![schematic](figure/sample_figures_256.jpg)
 
-#### Paper description:
+#### Paper description and Main Idea:
 This paper proposes a generally applicable training method for diffusion models. The suggested training method, Soft Truncation, is motivated from the observation that the density estimation is mostly counted on small diffusion time, while the sample generation is mostly constructed on large diffusion time. However, small diffusion time dominates the Monte-Carlo estimation of the loss function, so this imbalance contribution prevents accurate score learning on large diffusion time. Soft Truncation softens the truncation level at each mini-batch update, and this simple modification is connected to the general weighted diffusion loss and the concept of Maximum Perturbed Likelihood Estimation.
-
-#### Main Idea:
 This paper proposes a model that expands the forward path, the process of giving noise to data in the existing diffusion model, from being fixed by a linear SDE to become a learningable noise process. To this end, the normalizing flow model connecting the data space and the late space and the linear diffusion process in the late space are combined to form a non-linear diffusion process in the data space. It was confirmed that the diffusion model learned with this non-linear diffusion process proceeds close to MLE Training by overcoming the variological gap caused by robust sampling and elbo that produces good images even if the sampling step is reduced.
 
 #### Contribution:
 There are two interesting properties of Soft Truncation.
 * First, though Soft Truncation is nothing to do with the weighting function in its algorithmic design, surprisingly, Soft Truncation turns out to be equivalent to a diffusion model with a general weight
 
-## Running Commands
+## Training and Evaluation
 
 **CIFAR-10**
 
