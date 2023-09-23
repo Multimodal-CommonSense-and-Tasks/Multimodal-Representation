@@ -7,7 +7,6 @@
 This repo contains an official PyTorch implementation for the paper [Soft Truncation: A Universal Training Technique of Score-based Diffusion Model for High Precision Score Estimation](http://arxiv.org/abs/2106.05527).
 
 ## Overview
-
 We propose a genearlly applicable training method for a general weighted diffusion loss.
 
 ![schematic](figure/sample_figures_256.jpg)
@@ -18,9 +17,13 @@ This paper proposes a model that expands the forward path, the process of giving
 
 #### Contribution:
 There are two interesting properties of Soft Truncation.
-* First, though Soft Truncation is nothing to do with the weighting function in its algorithmic design, surprisingly, Soft Truncation turns out to be equivalent to a diffusion model with a general weight
-
+* Though Soft Truncation is nothing to do with the weighting function in its algorithmic design, surprisingly, Soft Truncation turns out to be equivalent to a diffusion model with a general weight
+* Soft Truncation could be framed by Maximum Perturbed Likelihood Estimation (MPLE), a generalized concept of MLE that is specifically defined only in diffusion models.
+* 
 ## Training and Evaluation
+
+### Pretrained checkpoints
+We release our checkpoints [here](https://drive.google.com/drive/folders/1Wyk0ucFW-QDS_g1EcPm361LWWgWqJ6L_).
 
 **CIFAR-10**
 
@@ -77,9 +80,6 @@ python main.py --config configs/vp/IMAGENET32/ddpmpp_st.py --workdir YOUR_SAVING
 ```shell script
 python main.py --config configs/ve/celebahq/uncsnpp_st.py --workdir YOUR_SAVING_DIRECTORY --mode train
 ```
-
-## Pretrained checkpoints
-We release our checkpoints [here](https://drive.google.com/drive/folders/1Wyk0ucFW-QDS_g1EcPm361LWWgWqJ6L_).
 
 ## Experimental Results
 
