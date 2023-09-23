@@ -19,6 +19,8 @@ Soft Truncation has two interesting properties.
 We release our checkpoints [here](https://drive.google.com/drive/folders/1Wyk0ucFW-QDS_g1EcPm361LWWgWqJ6L_).
 
 ### 2) Training and Evaluation commands
+* You can run code of diffusion model with soft truncation using below commands.
+
 
 **CIFAR-10**
 
