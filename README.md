@@ -1,6 +1,6 @@
 # Multimodal-Representation
 
-## This repository organizes researches related to AI Technology Development for Commonsense Extraction, Reasoning, and Inference from Heterogeneous Data, especially Multimodal-Representation task. This repository summarizes following researches.
+### This repository organizes researches related to AI Technology Development for Commonsense Extraction, Reasoning, and Inference from Heterogeneous Data, especially Multimodal-Representation task. This repository summarizes following researches.
 
 ## Research list
 * Refining Generative Process with Discriminator Guidance in Score-based Diffusion Models (DG) (ICML 2023 Oral) - Dongjun Kim, Yeongmin Kim, Se Jung Kwon, Wanmo Kang, and Il-Chul Moon.
