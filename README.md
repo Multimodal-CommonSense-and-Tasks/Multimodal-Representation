@@ -17,5 +17,4 @@
   * Explanation
 
 ## Acknowledgements
-These works were supported by Institute of Information & communications Technology Planning & Evaluation (IITP) grant funded by the Korea government(MSIT).
-Also, these works were supported by supported by the National Research Foundation of Korea (NRF) grant funded by the Korea government(MSIT).
+These works were supported by Institute of Information & communications Technology Planning & Evaluation (IITP) grant funded by the Korea government(MSIT). Also, these works were supported by supported by the National Research Foundation of Korea (NRF) grant funded by the Korea government(MSIT).
