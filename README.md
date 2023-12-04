@@ -4,7 +4,8 @@
 
 ## Research list
 * Refining Generative Process with Discriminator Guidance in Score-based Diffusion Models (DG) (ICML 2023 Oral) - Dongjun Kim, Yeongmin Kim, Se Jung Kwon, Wanmo Kang, and Il-Chul Moon.
-  * Explanation
+  * The proposed method, Discriminator Guidance, aims to improve sample generation of pre-trained diffusion models. The approach introduces a discriminator that gives explicit supervision to a denoising sample path whether it is realistic or not. Unlike GANs, our approach does not require joint training of score and discriminator networks. Instead, we train the discriminator after score training, making discriminator training stable and fast to converge. In sample generation, we add an auxiliary term to the pre-trained score to deceive the discriminator. This term corrects the model score to the data score at the optimal discriminator, which implies that the discriminator helps better score estimation in a complementary way.
+ 
 * Maximum Likelihood Training of Implicit Nonlinear Diffusion Model (INDM) (NeurIPS 2022 Poster) - Dongjun Kim, Byeonghu Na, Se Jung Kwon, Dongsoo Lee, Wanmo Kang, and Il-Chul Moon.
   * Explanation
 * Loss Curvature Matching for Dataset Selection and Condensation (LCMat) (AISTATS 2023 Poster) - Seungjae Shin, HeeSun Bae, Donghyeok Shin, Weonyoung Joo, and Il-Chul Moon.
