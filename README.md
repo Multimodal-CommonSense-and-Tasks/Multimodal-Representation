@@ -23,7 +23,7 @@
 
   * To overcome overfitting, this paper introduces the first active learning method to incorporate the sharpness of loss space into the acquisition function. Specifically, our proposed method, Sharpness-Aware Active Learning (SAAL), constructs its acquisition function by selecting unlabeled instances whose perturbed loss becomes maximum.
 
-* Soft Truncation: A Universal Training Technique of Score-based Diffusion Model for High Precision Score Estimation (ICML 2022 Poster) - Dongjun Kim,Seungjae Shin, Kyungwoo Song, Wanmo Kang, and Il-Chul Moon
+* Soft Truncation: A Universal Training Technique of Score-based Diffusion Model for High Precision Score Estimation (ICML 2022 Poster) - Dongjun Kim,Seungjae Shin, Kyungwoo Song, Wanmo Kang, and Il-Chul Moon.
 
   * The proposed method, Soft Truncation, a universally applicable training technique for diffusion models, softens the fixed and static truncation hyperparameter into a random variable. Soft Truncation softens the truncation level at each mini-batch update, and this simple modification is connected to the general weighted diffusion loss and the concept of Maximum Perturbed Likelihood Estimation.
 
