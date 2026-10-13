@@ -5,6 +5,12 @@
 
 ## Research list
 
+* Best-of-N Guidance for Test-time Diffusion Alignment (BoNG) (NeurIPS 2026) - Richard Lee Kim, Yeongmin Kim, Gyuwon Sim, Taekyu Kim, Minsang Park, and Il-Chul Moon.
+
+  * BoNG uses the highest-reward one-step denoised particle to guide the remaining diffusion particles toward high-reward regions with little additional inference cost.
+
+  * [Project code](./BoNG) | [Original repository](https://github.com/aailab-kaist/BoNG) | [Paper](https://arxiv.org/abs/2610.05108). IITP project acknowledgement: RS-2022-II220077. See the [inherited-code license notice](./BoNG/THIRD_PARTY_NOTICES.md).
+
 * WASD: Wasserstein-based Knowledge Distillation for Large Language Models (NeurIPS 2026) - Byeonghu Na, Donghyeok Shin, Yeongmin Kim, Mina Kang, and Il-Chul Moon.
 
   * WASD incorporates token-level semantic information into LLM distillation through a Sinkhorn divergence with transport costs derived from token embeddings.
