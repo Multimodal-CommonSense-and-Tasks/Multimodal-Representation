@@ -5,6 +5,12 @@
 
 ## Research list
 
+* WASD: Wasserstein-based Knowledge Distillation for Large Language Models (NeurIPS 2026) - Byeonghu Na, Donghyeok Shin, Yeongmin Kim, Mina Kang, and Il-Chul Moon.
+
+  * WASD incorporates token-level semantic information into LLM distillation through a Sinkhorn divergence with transport costs derived from token embeddings.
+
+  * [Project code](./WASD) | [Original repository](https://github.com/aailab-kaist/WASD) | [Paper](https://arxiv.org/abs/2610.07706). IITP project acknowledgement: RS-2022-II220077.
+
 * AC-Sampler: Accelerate And Correct Diffusion Sampling with Metropolis-Hastings Algorithm (ICLR 2026) - Minsang Park, Gyuwon Sim, Hyeongho Na, Jiseok Kwak, Sumin Lee, Richard Lee Kim, Donghyeok Shin, Byeonghu Na, Yeongmin Kim, and Il-Chul Moon.
 
   * The proposed AC-Sampler runs Metropolis-adjusted Langevin chains at intermediate noise levels of a pre-trained diffusion model. By using a time-dependent discriminator for Metropolis-Hastings correction and sharing early denoising computation across accepted samples, it improves sample fidelity while reducing the average number of function evaluations per sample.

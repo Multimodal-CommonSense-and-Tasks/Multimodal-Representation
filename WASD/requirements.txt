@@ -1,0 +1,27 @@
+# Verified on a single NVIDIA RTX PRO 6000 (CUDA 12.8) with Python 3.10.12.
+# Install PyTorch first (deepspeed requires torch at install time), then this file:
+#
+#   pip install torch==2.7.1 torchvision==0.22.1 torchaudio==2.7.1 --index-url https://download.pytorch.org/whl/cu128
+#   pip install -r requirements.txt
+
+transformers==5.5.0
+tokenizers==0.22.2
+safetensors==0.7.0
+huggingface_hub[cli]==1.9.0
+accelerate==1.13.0
+datasets==4.8.4
+peft==0.18.1
+deepspeed==0.18.9
+numpy==1.26.4
+pandas==2.3.3
+sentencepiece==0.2.1
+protobuf==6.33.6
+nltk==3.9.4
+rouge_score==0.1.2
+numerize==0.12
+torchtyping==0.1.5
+Fraction==2.2.0
+jsonlines==4.0.0
+rich==14.3.3
+tqdm==4.67.3
+regex==2026.3.32
